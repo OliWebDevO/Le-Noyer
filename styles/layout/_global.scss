@@ -1,0 +1,55 @@
+// Lenis
+html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  * a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.link {
+    color: black;
+    transition: ease-in-out .5s;
+    &:hover{
+        color: rgba(255, 166, 0, 0.876);
+        transition: ease-in-out .3s;
+    }
+   
+}
+
+* ul {
+    list-style-type: none;
+}
+
+i:hover {
+    color: rgba(255, 166, 0, 0.619);
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 99;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(255, 166, 0, 0.833);
+    }
+    i {
+        color: white;
+    }
+}

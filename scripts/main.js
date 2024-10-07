@@ -49,3 +49,38 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  // NAV APPEAR
+
+let nav = document.querySelector('nav'); 
+let prenav = document.querySelector('.prenav');
+let currentScrollPosition =0;
+window.addEventListener("scroll", function(){  
+       currentScrollPosition = window.scrollY;         
+       if (currentScrollPosition  > 0){
+            nav.classList.add('translateUp');
+            prenav.classList.add('translateUpPreNav');
+        } else {
+            nav.classList.remove("translateUp");
+            prenav.classList.remove('translateUpPreNav');
+        }
+} );
+
+
+// Back to top
+
+let backToTop = document.querySelector('.back-to-top')
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+}
+backToTop.addEventListener('click', ()=>{
+  window.scrollTo({top: 0, behavior: "smooth"});
+})
