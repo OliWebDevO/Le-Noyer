@@ -16,7 +16,28 @@ html.lenis {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
+body {
+    background-color: #f6f3f3;
+}
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: black;
+}
 .link {
     color: black;
     transition: ease-in-out .5s;
