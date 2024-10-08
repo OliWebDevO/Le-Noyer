@@ -12,7 +12,7 @@
     justify-content: center;
     transition: ease-in-out .5s;
     border-radius: 8px;
-    color: black;
+    color: #49647e;
     background-color:rgba(255, 255, 255, 0.936);
     transition: ease-in-out .5s;
     border-radius: 8px 8px 8px 8px;
@@ -27,10 +27,11 @@
         i {
             padding-right: 10px;
             cursor: pointer;
+            color: #49647e;
         }
         a {
             text-decoration: none;
-            color: black;
+            color: #49647e;
             &:hover{
                 color: rgba(255, 166, 0, 0.876);
                 transition: ease-in-out .3s;
@@ -56,7 +57,7 @@
     right: 10px;
     padding: 0 5.5vw;
     width: calc(100% - 20px);
-    color: black;
+    color: #49647e;
     background-color:rgba(255, 255, 255, 0.936);
     transition: ease-in-out .5s;
     border-radius: 8px 8px 8px 8px;
@@ -75,7 +76,7 @@
         }
     }
     .link {
-        color: black;
+        color: #49647e;
     }
     .join-us {
         padding: 10px 20px;

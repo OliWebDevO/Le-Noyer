@@ -1,8 +1,7 @@
 section {
-    height: 100vh;
 }
 
-.horaire {
+.horaire-box {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,6 +21,32 @@ section {
         }
         p {
             color: white;
+        }
+    }
+}
+.rdv-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    .rdv-text-box {
+        padding: 80px;
+        h3 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+    .rdv-box-item {
+        width: 50vw;
+        height: 60vh;
+        background-color: #49647e;
+        img {
+            width: 50vw;
+            height: 60vh;
+            object-position: center;
+            object-fit: cover;
         }
     }
 }
