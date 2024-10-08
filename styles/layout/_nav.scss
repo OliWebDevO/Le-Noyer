@@ -70,9 +70,38 @@
         align-items: center;
         justify-content: space-between;
     
-        a:hover{
-            color: rgba(255, 166, 0, 0.876);
-            transition: ease-in-out .3s;
+        // a:hover{
+        //     color:#49647eb0;
+        //     transition: ease-in-out .3s;
+        // }
+        
+        span {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding:  8px 0;
+            margin: 0 10px;
+            transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+        }
+        span::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background-color: #49647e;;
+            transform-origin: right top;
+            transform: scale(0, 1);
+            transition: color 0.1s,transform 0.2s ease-out;
+        }
+        span:active::before {
+            background-color: #49647e;
+        }
+        span:hover::before, a:focus::before {
+            transform-origin: left top;
+            transform: scale(1, 1);
         }
     }
     .link {
@@ -85,24 +114,10 @@
         color: white;
     }
     .n-logo {
-        color: darkblue;
         img {
             height: 60px;
         }
     }
-    .n-user-links a{
-        color: white;
-      
-        i { 
-            color: rgba(77, 73, 73, 0.555);
-        }
-        }
-        .bell-num {
-            background-color: orange;
-        }
-        .mess-num {
-            background-color:orange;
-        }
 
 }
 .translateUp {
